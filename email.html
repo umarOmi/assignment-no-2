@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html> 
+<html> 
+  
+<head> 
+   
+    <title> 
+       
+    </title> 
+</head> 
+  
+<body style="text-align: center;"> 
+      
+    <h1 style="color: green;"> 
+        Email Entry 
+    </h1> 
+  
+    <h3 id="po">Input Array Elements</h3>  
+        <input type="text" name="array[]" value="" /><br> 
+        <input type="text" name="array[]" value="" /><br> 
+        <input type="text" name="array[]" value="" /><br> 
+        <input type="text" name="array[]" value="" /><br> 
+        <input type="text" name="array[]" value="" /><br> 
+        <button type="button" name="button" onclick="Geeks()"> 
+            Submit 
+        </button> 
+    </form> 
+    <br> 
+  
+    <p id="par"></p> 
+  
+    <script type="text/javascript"> 
+        var k = "Emails are:"; 
+        function Geeks() { 
+            var input = document.getElementsByName('array[]'); 
+  for (var i = 0; i < input.length; i++) { 
+                var a = input[i]; 
+                k = k + "array[" + i + "];value= " 
+                                   + a.value + " "; 
+            } 
+  
+            document.getElementById("par").innerHTML = k; 
+            document.getElementById("po").innerHTML = "Output"; 
+        } 
+    </script> 
+</body> 
+  
+</html> 

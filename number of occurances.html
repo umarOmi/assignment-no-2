@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title></title>
+</head>
+<body>
+<script>
+
+var arr = [2, 2, 2, 2, 2, 4, 5, 5, 5, 9];
+
+function foo(arr) {
+  var a = [],
+    b = [],
+    prev;
+
+  arr.sort();
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] !== prev) {
+      a.push(arr[i]);
+      b.push(1);
+    } else {
+      b[b.length - 1]++;
+    }
+    prev = arr[i];
+  }
+
+  return [a, b];
+}
+
+var result = foo(arr);
+console.log('[' + result[0] + ']','[' + result[1] + ']')
+
+var arrr= [ 1, 2, 3, 4, 5 ];
+function foo(arrr) {
+  var a = [],
+    b = [],
+    prev;
+
+  arrr.sort();
+  for (var i = 0; i < arrr.length; i++) {
+    if (arrr[i] !== prev) {
+      a.push(arrr[i]);
+      b.push(1);
+    } else {
+      b[b.length - 1]++;
+    }
+    prev = arrr[i];
+  }
+
+  return [a, b];
+}
+
+var result = foo(arrr);
+console.log('[' + result[0] + ']','[' + result[1] + ']')
+
+var ari=[ null, undefined, null ]
+function foo(ari) {
+  var a = [],
+    b = [],
+    prev;
+
+  ari.sort();
+  for (var i = 0; i < ari.length; i++) {
+    if (ari[i] !== prev) {
+      a.push(ari[i]);
+      b.push(1);
+    } else {
+      b[b.length - 1]++;
+    }
+    prev = ari[i];
+  }
+
+  return [a, b];
+}
+
+var result = foo(ari);
+console.log('[' + result[0] + ']','[' + result[1] + ']')
+
+</script>
+</body>
+</html>
